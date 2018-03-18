@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A172058563A00DCABAD /* AppDelegate.swift */; };
-		611C3A1A2058563A00DCABAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A192058563A00DCABAD /* ViewController.swift */; };
 		611C3A1D2058563A00DCABAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A1B2058563A00DCABAD /* Main.storyboard */; };
 		611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */; };
 		611C3A222058563A00DCABAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A212058563A00DCABAD /* Assets.xcassets */; };
 		611C3A252058563A00DCABAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A232058563A00DCABAD /* LaunchScreen.storyboard */; };
+		611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A2C2058569100DCABAD /* MainViewController.swift */; };
+		611C3A33205C76E000DCABAD /* AIDiscussionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		611C3A142058563A00DCABAD /* Epic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611C3A172058563A00DCABAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		611C3A192058563A00DCABAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		611C3A1C2058563A00DCABAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		611C3A1F2058563A00DCABAD /* Epic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Epic.xcdatamodel; sourceTree = "<group>"; };
 		611C3A212058563A00DCABAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611C3A242058563A00DCABAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611C3A262058563A00DCABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		611C3A2C2058569100DCABAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDiscussionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,11 @@
 		611C3A162058563A00DCABAD /* Epic */ = {
 			isa = PBXGroup;
 			children = (
+				611C3A312058589D00DCABAD /* SupportFiles */,
+				611C3A302058589200DCABAD /* Models */,
+				611C3A2F2058588300DCABAD /* TableViewCells */,
+				611C3A2E2058587900DCABAD /* ViewControllers */,
 				611C3A172058563A00DCABAD /* AppDelegate.swift */,
-				611C3A192058563A00DCABAD /* ViewController.swift */,
 				611C3A1B2058563A00DCABAD /* Main.storyboard */,
 				611C3A212058563A00DCABAD /* Assets.xcassets */,
 				611C3A232058563A00DCABAD /* LaunchScreen.storyboard */,
@@ -65,6 +70,36 @@
 				611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */,
 			);
 			path = Epic;
+			sourceTree = "<group>";
+		};
+		611C3A2E2058587900DCABAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				611C3A2C2058569100DCABAD /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		611C3A2F2058588300DCABAD /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		611C3A302058589200DCABAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		611C3A312058589D00DCABAD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				611C3A1A2058563A00DCABAD /* ViewController.swift in Sources */,
+				611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */,
 				611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */,
 				611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */,
+				611C3A33205C76E000DCABAD /* AIDiscussionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
