@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485178643FA865DA9C658FF5 /* Pods_Epic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */; };
 		611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A172058563A00DCABAD /* AppDelegate.swift */; };
 		611C3A1D2058563A00DCABAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A1B2058563A00DCABAD /* Main.storyboard */; };
 		611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */; };
-		611C3A222058563A00DCABAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A212058563A00DCABAD /* Assets.xcassets */; };
 		611C3A252058563A00DCABAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A232058563A00DCABAD /* LaunchScreen.storyboard */; };
 		611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A2C2058569100DCABAD /* MainViewController.swift */; };
-		611C3A33205C76E000DCABAD /* AIDiscussionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */; };
+		611C3A36205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A34205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift */; };
+		611C3A37205F1EAD00DCABAD /* MainDiscussionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A35205F1EAD00DCABAD /* MainDiscussionTableViewCell.xib */; };
+		611C3A392060552500DCABAD /* Discussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A382060552500DCABAD /* Discussion.swift */; };
+		611C3A3B206058E200DCABAD /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3A206058E200DCABAD /* Topic.swift */; };
+		611C3A3D20605AAE00DCABAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3C20605AAE00DCABAD /* User.swift */; };
+		611C3A3F2070FEF300DCABAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A3E2070FEF300DCABAD /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2628713BB899E02FC8817530 /* Pods-Epic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.debug.xcconfig"; sourceTree = "<group>"; };
 		611C3A142058563A00DCABAD /* Epic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611C3A172058563A00DCABAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611C3A1C2058563A00DCABAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		611C3A1F2058563A00DCABAD /* Epic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Epic.xcdatamodel; sourceTree = "<group>"; };
-		611C3A212058563A00DCABAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611C3A242058563A00DCABAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611C3A262058563A00DCABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		611C3A2C2058569100DCABAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDiscussionTableViewCell.swift; sourceTree = "<group>"; };
+		611C3A34205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiscussionTableViewCell.swift; sourceTree = "<group>"; };
+		611C3A35205F1EAD00DCABAD /* MainDiscussionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainDiscussionTableViewCell.xib; sourceTree = "<group>"; };
+		611C3A382060552500DCABAD /* Discussion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
+		611C3A3A206058E200DCABAD /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		611C3A3C20605AAE00DCABAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		611C3A3E2070FEF300DCABAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.release.xcconfig"; sourceTree = "<group>"; };
+		DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485178643FA865DA9C658FF5 /* Pods_Epic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				611C3A162058563A00DCABAD /* Epic */,
 				611C3A152058563A00DCABAD /* Products */,
+				893314372447CC040A3C3E1D /* Pods */,
+				7702A694F4ECBE126A8B5C55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +79,10 @@
 				611C3A2E2058587900DCABAD /* ViewControllers */,
 				611C3A172058563A00DCABAD /* AppDelegate.swift */,
 				611C3A1B2058563A00DCABAD /* Main.storyboard */,
-				611C3A212058563A00DCABAD /* Assets.xcassets */,
 				611C3A232058563A00DCABAD /* LaunchScreen.storyboard */,
 				611C3A262058563A00DCABAD /* Info.plist */,
 				611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */,
+				611C3A3E2070FEF300DCABAD /* Images.xcassets */,
 			);
 			path = Epic;
 			sourceTree = "<group>";
@@ -83,7 +98,8 @@
 		611C3A2F2058588300DCABAD /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				611C3A32205C76E000DCABAD /* AIDiscussionTableViewCell.swift */,
+				611C3A34205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift */,
+				611C3A35205F1EAD00DCABAD /* MainDiscussionTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -91,6 +107,9 @@
 		611C3A302058589200DCABAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				611C3A382060552500DCABAD /* Discussion.swift */,
+				611C3A3A206058E200DCABAD /* Topic.swift */,
+				611C3A3C20605AAE00DCABAD /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +121,23 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		7702A694F4ECBE126A8B5C55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		893314372447CC040A3C3E1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2628713BB899E02FC8817530 /* Pods-Epic.debug.xcconfig */,
+				631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 611C3A292058563A00DCABAD /* Build configuration list for PBXNativeTarget "Epic" */;
 			buildPhases = (
+				DA132D1B2D7AA92B1F65710C /* [CP] Check Pods Manifest.lock */,
 				611C3A102058563A00DCABAD /* Sources */,
 				611C3A112058563A00DCABAD /* Frameworks */,
 				611C3A122058563A00DCABAD /* Resources */,
+				5998FF498447B1CF0E5EB4C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +167,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Epic;
 				TargetAttributes = {
 					611C3A132058563A00DCABAD = {
@@ -161,13 +199,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611C3A37205F1EAD00DCABAD /* MainDiscussionTableViewCell.xib in Resources */,
+				611C3A3F2070FEF300DCABAD /* Images.xcassets in Resources */,
 				611C3A252058563A00DCABAD /* LaunchScreen.storyboard in Resources */,
-				611C3A222058563A00DCABAD /* Assets.xcassets in Resources */,
 				611C3A1D2058563A00DCABAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5998FF498447B1CF0E5EB4C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Epic/Pods-Epic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epic/Pods-Epic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA132D1B2D7AA92B1F65710C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Epic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		611C3A102058563A00DCABAD /* Sources */ = {
@@ -175,9 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */,
+				611C3A3B206058E200DCABAD /* Topic.swift in Sources */,
+				611C3A392060552500DCABAD /* Discussion.swift in Sources */,
 				611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */,
 				611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */,
-				611C3A33205C76E000DCABAD /* AIDiscussionTableViewCell.swift in Sources */,
+				611C3A36205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift in Sources */,
+				611C3A3D20605AAE00DCABAD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +298,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -224,6 +306,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -274,6 +357,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -281,6 +365,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -312,31 +397,35 @@
 		};
 		611C3A2A2058563A00DCABAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2628713BB899E02FC8817530 /* Pods-Epic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4WE2NR99U;
 				INFOPLIST_FILE = Epic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = al.epic.Epic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		611C3A2B2058563A00DCABAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4WE2NR99U;
 				INFOPLIST_FILE = Epic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = al.epic.Epic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
