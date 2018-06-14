@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D5o-ou-0Ao">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D5o-ou-0Ao">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,25 +28,40 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-7T-YVL">
-                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-O0-fnR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYV-fT-Kxk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QA7-Sn-bhK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-4O-ICk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vQB-mQ-pmH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu4-BI-BEK">
-                                                    <rect key="frame" x="20" y="20" width="335" height="60"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="09j-As-9M5">
+                                                    <rect key="frame" x="20" y="36" width="355" height="44"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="u1t-0V-pwO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="7iF-PX-zOr"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom Al, to Epic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C44-w4-pNh">
+                                                            <rect key="frame" x="36" y="0.0" width="319" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="OYb-ur-4K5"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="bu4-BI-BEK" secondAttribute="bottom" constant="10" id="gFb-pC-5QW"/>
-                                                <constraint firstAttribute="trailing" secondItem="bu4-BI-BEK" secondAttribute="trailing" constant="20" id="ier-pn-N7m"/>
-                                                <constraint firstItem="bu4-BI-BEK" firstAttribute="leading" secondItem="QA7-Sn-bhK" secondAttribute="leading" constant="20" id="uDl-qt-FKh"/>
-                                                <constraint firstItem="bu4-BI-BEK" firstAttribute="top" secondItem="QA7-Sn-bhK" secondAttribute="top" constant="20" id="v6y-Kk-wAB"/>
+                                                <constraint firstAttribute="trailing" secondItem="09j-As-9M5" secondAttribute="trailing" id="7RU-mg-XaO"/>
+                                                <constraint firstItem="09j-As-9M5" firstAttribute="leading" secondItem="vQB-mQ-pmH" secondAttribute="leading" constant="20" id="AnX-Zd-vs6"/>
+                                                <constraint firstAttribute="bottom" secondItem="09j-As-9M5" secondAttribute="bottom" id="DtU-7L-hFb"/>
                                             </constraints>
                                         </view>
                                         <blurEffect style="dark"/>
@@ -54,8 +69,29 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bXS-4O-ICk" secondAttribute="bottom" id="Eka-HI-YLt"/>
+                                    <constraint firstAttribute="trailing" secondItem="bXS-4O-ICk" secondAttribute="trailing" id="HUq-ao-xvp"/>
+                                    <constraint firstItem="bXS-4O-ICk" firstAttribute="top" secondItem="0Ug-O0-fnR" secondAttribute="top" id="SPk-hk-w8b"/>
+                                    <constraint firstAttribute="height" constant="80" id="bW0-5z-Akw"/>
+                                    <constraint firstItem="bXS-4O-ICk" firstAttribute="leading" secondItem="0Ug-O0-fnR" secondAttribute="leading" id="g9r-6d-Xxt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-7T-YVL">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYV-fT-Kxk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QA7-Sn-bhK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
                                     <constraint firstItem="xYV-fT-Kxk" firstAttribute="top" secondItem="H8a-7T-YVL" secondAttribute="top" id="F0O-Zt-Fdf"/>
-                                    <constraint firstAttribute="height" constant="90" id="IN0-le-sZE"/>
+                                    <constraint firstAttribute="height" constant="60" id="IN0-le-sZE"/>
                                     <constraint firstAttribute="trailing" secondItem="xYV-fT-Kxk" secondAttribute="trailing" id="bo6-Bp-SZ6"/>
                                     <constraint firstAttribute="bottom" secondItem="xYV-fT-Kxk" secondAttribute="bottom" id="lyi-oi-JXc"/>
                                     <constraint firstItem="xYV-fT-Kxk" firstAttribute="leading" secondItem="H8a-7T-YVL" secondAttribute="leading" id="qAs-li-hRs"/>
@@ -71,6 +107,7 @@
                             <constraint firstItem="uw2-W5-xp6" firstAttribute="top" secondItem="4YD-GA-zL2" secondAttribute="top" id="H8M-Lm-Nco"/>
                             <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="uw2-W5-xp6" secondAttribute="bottom" id="KUo-Wp-IKB"/>
                             <constraint firstItem="zuJ-Mj-104" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="NKA-Ft-BEi"/>
+                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="top" secondItem="4YD-GA-zL2" secondAttribute="top" id="O9Y-GC-Is2"/>
                             <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="H8a-7T-YVL" secondAttribute="bottom" id="P8G-QP-ZeQ"/>
                             <constraint firstItem="uw2-W5-xp6" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="SuM-AH-aQe"/>
                             <constraint firstItem="H8a-7T-YVL" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="XOO-8E-RAE"/>
@@ -79,6 +116,8 @@
                             <constraint firstAttribute="trailing" secondItem="uw2-W5-xp6" secondAttribute="trailing" id="fL8-XG-Swt"/>
                             <constraint firstAttribute="bottom" secondItem="zuJ-Mj-104" secondAttribute="bottom" id="j1t-7T-Ota"/>
                             <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="gD9-dM-ibw" secondAttribute="bottom" id="wHu-EN-qVA"/>
+                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="trailing" secondItem="I0l-3x-LKn" secondAttribute="trailing" id="xDG-Ks-el3"/>
+                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="xgR-m4-QrG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I0l-3x-LKn"/>
                     </view>
@@ -96,5 +135,6 @@
     </scenes>
     <resources>
         <image name="astronomy-constellation-galaxy-63558" width="1200" height="1800"/>
+        <image name="epic_logo" width="70" height="70"/>
     </resources>
 </document>

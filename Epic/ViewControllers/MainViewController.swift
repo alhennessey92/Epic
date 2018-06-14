@@ -43,14 +43,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         mainTableView.dataSource = self
         mainTableView.delegate = self
         
+       
         
-        let imagesListArray: [UIImage] = [
-            UIImage(named: "space-1.jpg")!,
-            UIImage(named: "space-2.jpg")!
-        ]
-        self.wallpaperViewBG.animationImages = imagesListArray;
-        self.wallpaperViewBG.animationDuration = 113.0
-        self.wallpaperViewBG.startAnimating()
+//        let imagesListArray: [UIImage] = [
+//            UIImage(named: "space-1.jpg")!,
+//            UIImage(named: "space-2.jpg")!
+//        ]
+//        self.wallpaperViewBG.animationImages = imagesListArray;
+//        self.wallpaperViewBG.animationDuration = 113.0
+//        self.wallpaperViewBG.startAnimating()
         
 
         
