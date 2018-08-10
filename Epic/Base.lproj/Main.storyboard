@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D5o-ou-0Ao">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ydW-8D-jdU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,126 +15,149 @@
             <objects>
                 <viewController id="D5o-ou-0Ao" customClass="MainViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4YD-GA-zL2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astronomy-constellation-galaxy-63558" translatesAutoresizingMaskIntoConstraints="NO" id="uw2-W5-xp6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-Mj-104">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-dM-ibw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-O0-fnR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-4O-ICk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vQB-mQ-pmH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="09j-As-9M5">
-                                                    <rect key="frame" x="20" y="36" width="355" height="44"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="u1t-0V-pwO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="44"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="7iF-PX-zOr"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom Al, to Epic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C44-w4-pNh">
-                                                            <rect key="frame" x="36" y="0.0" width="319" height="44"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="OYb-ur-4K5"/>
-                                                    </constraints>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="09j-As-9M5" secondAttribute="trailing" id="7RU-mg-XaO"/>
-                                                <constraint firstItem="09j-As-9M5" firstAttribute="leading" secondItem="vQB-mQ-pmH" secondAttribute="leading" constant="20" id="AnX-Zd-vs6"/>
-                                                <constraint firstAttribute="bottom" secondItem="09j-As-9M5" secondAttribute="bottom" id="DtU-7L-hFb"/>
-                                            </constraints>
-                                        </view>
-                                        <blurEffect style="dark"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="bXS-4O-ICk" secondAttribute="bottom" id="Eka-HI-YLt"/>
-                                    <constraint firstAttribute="trailing" secondItem="bXS-4O-ICk" secondAttribute="trailing" id="HUq-ao-xvp"/>
-                                    <constraint firstItem="bXS-4O-ICk" firstAttribute="top" secondItem="0Ug-O0-fnR" secondAttribute="top" id="SPk-hk-w8b"/>
-                                    <constraint firstAttribute="height" constant="80" id="bW0-5z-Akw"/>
-                                    <constraint firstItem="bXS-4O-ICk" firstAttribute="leading" secondItem="0Ug-O0-fnR" secondAttribute="leading" id="g9r-6d-Xxt"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-7T-YVL">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                                <subviews>
-                                    <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYV-fT-Kxk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QA7-Sn-bhK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </view>
-                                        <blurEffect style="dark"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="xYV-fT-Kxk" firstAttribute="top" secondItem="H8a-7T-YVL" secondAttribute="top" id="F0O-Zt-Fdf"/>
-                                    <constraint firstAttribute="height" constant="60" id="IN0-le-sZE"/>
-                                    <constraint firstAttribute="trailing" secondItem="xYV-fT-Kxk" secondAttribute="trailing" id="bo6-Bp-SZ6"/>
-                                    <constraint firstAttribute="bottom" secondItem="xYV-fT-Kxk" secondAttribute="bottom" id="lyi-oi-JXc"/>
-                                    <constraint firstItem="xYV-fT-Kxk" firstAttribute="leading" secondItem="H8a-7T-YVL" secondAttribute="leading" id="qAs-li-hRs"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gD9-dM-ibw" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="2gI-61-1IY"/>
                             <constraint firstItem="I0l-3x-LKn" firstAttribute="trailing" secondItem="zuJ-Mj-104" secondAttribute="trailing" id="BGI-Hj-NbE"/>
-                            <constraint firstItem="H8a-7T-YVL" firstAttribute="trailing" secondItem="I0l-3x-LKn" secondAttribute="trailing" id="BOi-uD-OwV"/>
-                            <constraint firstItem="gD9-dM-ibw" firstAttribute="trailing" secondItem="I0l-3x-LKn" secondAttribute="trailing" id="Cer-K2-eay"/>
                             <constraint firstItem="uw2-W5-xp6" firstAttribute="top" secondItem="4YD-GA-zL2" secondAttribute="top" id="H8M-Lm-Nco"/>
                             <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="uw2-W5-xp6" secondAttribute="bottom" id="KUo-Wp-IKB"/>
                             <constraint firstItem="zuJ-Mj-104" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="NKA-Ft-BEi"/>
-                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="top" secondItem="4YD-GA-zL2" secondAttribute="top" id="O9Y-GC-Is2"/>
-                            <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="H8a-7T-YVL" secondAttribute="bottom" id="P8G-QP-ZeQ"/>
                             <constraint firstItem="uw2-W5-xp6" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="SuM-AH-aQe"/>
-                            <constraint firstItem="H8a-7T-YVL" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="XOO-8E-RAE"/>
                             <constraint firstItem="zuJ-Mj-104" firstAttribute="top" secondItem="4YD-GA-zL2" secondAttribute="top" id="atf-me-MK3"/>
-                            <constraint firstItem="gD9-dM-ibw" firstAttribute="top" secondItem="I0l-3x-LKn" secondAttribute="top" id="bPb-sV-Atd"/>
                             <constraint firstAttribute="trailing" secondItem="uw2-W5-xp6" secondAttribute="trailing" id="fL8-XG-Swt"/>
                             <constraint firstAttribute="bottom" secondItem="zuJ-Mj-104" secondAttribute="bottom" id="j1t-7T-Ota"/>
-                            <constraint firstItem="I0l-3x-LKn" firstAttribute="bottom" secondItem="gD9-dM-ibw" secondAttribute="bottom" id="wHu-EN-qVA"/>
-                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="trailing" secondItem="I0l-3x-LKn" secondAttribute="trailing" id="xDG-Ks-el3"/>
-                            <constraint firstItem="0Ug-O0-fnR" firstAttribute="leading" secondItem="I0l-3x-LKn" secondAttribute="leading" id="xgR-m4-QrG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I0l-3x-LKn"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabExplore" selectedImage="TabExploreSelected" id="KXT-LM-P76">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="gradientViewBG" destination="zuJ-Mj-104" id="cy2-s7-ehi"/>
-                        <outlet property="mainTableView" destination="gD9-dM-ibw" id="0sv-dT-AQ2"/>
-                        <outlet property="testUserView" destination="H8a-7T-YVL" id="gNC-PD-hCh"/>
                         <outlet property="wallpaperViewBG" destination="uw2-W5-xp6" id="W4D-ZU-mp2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Oh-MF-Kr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="-67.016491754122939"/>
+            <point key="canvasLocation" x="-1860" y="797"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Qka-qn-dcE">
+            <objects>
+                <viewController id="67f-2Y-MRh" customClass="SearchViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2v-H6-FpI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hbT-R4-Bqk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabSearch" selectedImage="TabSearchSelected" id="TaK-iP-Mjo">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vU0-ad-rWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="797"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="V5b-Oy-dLi">
+            <objects>
+                <viewController id="wf5-qQ-JU3" customClass="NotificationsViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gy2-ml-yrc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BBg-HV-ZRh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabNotification" selectedImage="TabNotificationSelected" id="IPv-de-Ob1">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZ3-zQ-VNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="797"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="BaM-CE-8kN">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" id="ydW-8D-jdU" customClass="MainTabBarViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" itemPositioning="centered" id="9ML-6x-T9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D5o-ou-0Ao" kind="relationship" relationship="viewControllers" id="xOR-Fk-qhq"/>
+                        <segue destination="jfw-MY-wAv" kind="relationship" relationship="viewControllers" id="w99-3y-JUe"/>
+                        <segue destination="67f-2Y-MRh" kind="relationship" relationship="viewControllers" id="EOT-OI-4gQ"/>
+                        <segue destination="wf5-qQ-JU3" kind="relationship" relationship="viewControllers" id="Q95-TE-U6i"/>
+                        <segue destination="yhZ-b4-meK" kind="relationship" relationship="viewControllers" id="XsP-jB-o0n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlw-Dd-t3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="14"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="En6-Iz-80B">
+            <objects>
+                <viewController id="yhZ-b4-meK" customClass="ProfileViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9B-gX-I1y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C5k-pj-YOT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabProfile" selectedImage="TabProfileSelected" id="WZ6-EM-lC4">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzM-Ab-Qyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="797"/>
+        </scene>
+        <!--User Content View Controller-->
+        <scene sceneID="jFZ-7x-OFF">
+            <objects>
+                <viewController id="jfw-MY-wAv" customClass="UserContentViewController" customModule="Epic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YYQ-hh-xFH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v8N-Mg-OIF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabUserContent" selectedImage="TabUserContentSelected" id="gBr-UE-UuG">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1E-I0-kCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094" y="797"/>
         </scene>
     </scenes>
     <resources>
+        <image name="TabExplore" width="25" height="25"/>
+        <image name="TabExploreSelected" width="25" height="25"/>
+        <image name="TabNotification" width="19" height="23"/>
+        <image name="TabNotificationSelected" width="19" height="23"/>
+        <image name="TabProfile" width="21" height="23"/>
+        <image name="TabProfileSelected" width="21" height="23"/>
+        <image name="TabSearch" width="22" height="22"/>
+        <image name="TabSearchSelected" width="22" height="22"/>
+        <image name="TabUserContent" width="23" height="22"/>
+        <image name="TabUserContentSelected" width="23" height="22"/>
         <image name="astronomy-constellation-galaxy-63558" width="1200" height="1800"/>
-        <image name="epic_logo" width="70" height="70"/>
     </resources>
 </document>

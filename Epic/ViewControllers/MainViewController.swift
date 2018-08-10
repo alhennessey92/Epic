@@ -9,15 +9,15 @@
 import UIKit
 import DynamicBlurView
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController {
     
-    private var aiData: [String] = []
+    
     
     @IBOutlet weak var testUserView: UIView!
     @IBOutlet weak var wallpaperViewBG: UIImageView!
     @IBOutlet weak var gradientViewBG: UIView!
     
-    @IBOutlet weak var mainTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +36,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        //Instantiate nib files for different table cell layouts
-        mainTableView.register(UINib(nibName: "MainDiscussionTableViewCell", bundle: nil), forCellReuseIdentifier: "mainDiscussionCell")
-        
-        
-        mainTableView.dataSource = self
-        mainTableView.delegate = self
-        
+       
        
         
 //        let imagesListArray: [UIImage] = [
@@ -54,9 +48,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        self.wallpaperViewBG.startAnimating()
         
 
-        
-        //Helper function temp
-        manageAIData()
+   
         
     }
 
@@ -67,47 +59,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+   
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return aiData.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mainDiscussionCell", for: indexPath) as? MainDiscussionTableViewCell else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
-        }
-        
-
-        let text = aiData[indexPath.row]
-        cell.cellLabel.text = text
-
-        return cell
-
-    }
-
-    
-    //Select the row
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let activityObjSel = aiData[indexPath.row]
-        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row) and the name is \(activityObjSel).", preferredStyle: .alert)
-        
-        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        
-        alertController.addAction(alertAction)
-        
-        present(alertController, animated: true, completion: nil)
-        
-    }
-    
-
-    func manageAIData(){
-
-        aiData = ["Hello", "No Hello", "Al"]
-    }
+  
 
 }

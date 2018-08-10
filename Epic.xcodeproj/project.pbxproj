@@ -19,6 +19,11 @@
 		611C3A3B206058E200DCABAD /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3A206058E200DCABAD /* Topic.swift */; };
 		611C3A3D20605AAE00DCABAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3C20605AAE00DCABAD /* User.swift */; };
 		611C3A3F2070FEF300DCABAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A3E2070FEF300DCABAD /* Images.xcassets */; };
+		6194247A211E360100D32416 /* UserContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942479211E360100D32416 /* UserContentViewController.swift */; };
+		6194247C211E361000D32416 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194247B211E361000D32416 /* SearchViewController.swift */; };
+		6194247E211E361E00D32416 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194247D211E361E00D32416 /* NotificationsViewController.swift */; };
+		61942480211E364D00D32416 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194247F211E364D00D32416 /* ProfileViewController.swift */; };
+		61942482211E3F4D00D32416 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942481211E3F4D00D32416 /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		611C3A3A206058E200DCABAD /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		611C3A3C20605AAE00DCABAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		611C3A3E2070FEF300DCABAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61942479211E360100D32416 /* UserContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentViewController.swift; sourceTree = "<group>"; };
+		6194247B211E361000D32416 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6194247D211E361E00D32416 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		6194247F211E364D00D32416 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		61942481211E3F4D00D32416 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.release.xcconfig"; sourceTree = "<group>"; };
 		DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +93,7 @@
 				611C3A262058563A00DCABAD /* Info.plist */,
 				611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */,
 				611C3A3E2070FEF300DCABAD /* Images.xcassets */,
+				61942481211E3F4D00D32416 /* MainTabBarViewController.swift */,
 			);
 			path = Epic;
 			sourceTree = "<group>";
@@ -91,6 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				611C3A2C2058569100DCABAD /* MainViewController.swift */,
+				61942479211E360100D32416 /* UserContentViewController.swift */,
+				6194247B211E361000D32416 /* SearchViewController.swift */,
+				6194247D211E361E00D32416 /* NotificationsViewController.swift */,
+				6194247F211E364D00D32416 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,8 +270,13 @@
 				611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */,
 				611C3A3B206058E200DCABAD /* Topic.swift in Sources */,
 				611C3A392060552500DCABAD /* Discussion.swift in Sources */,
+				6194247C211E361000D32416 /* SearchViewController.swift in Sources */,
+				6194247A211E360100D32416 /* UserContentViewController.swift in Sources */,
+				6194247E211E361E00D32416 /* NotificationsViewController.swift in Sources */,
+				61942480211E364D00D32416 /* ProfileViewController.swift in Sources */,
 				611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */,
 				611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */,
+				61942482211E3F4D00D32416 /* MainTabBarViewController.swift in Sources */,
 				611C3A36205F1EAD00DCABAD /* MainDiscussionTableViewCell.swift in Sources */,
 				611C3A3D20605AAE00DCABAD /* User.swift in Sources */,
 			);
