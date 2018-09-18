@@ -1,16 +1,17 @@
 //
-//  NotificationTableViewCell.swift
+//  PreSearchTableViewCell.swift
 //  Epic
 //
-//  Created by Al Hennessey on 14/08/2018.
+//  Created by Al Hennessey on 18/09/2018.
 //  Copyright © 2018 Epic. All rights reserved.
 //
 
 import UIKit
 
-class NotificationTableViewCell: UITableViewCell {
+class PreSearchTableViewCell: UITableViewCell {
 
-    @IBOutlet var cellLabel: UILabel!
+    @IBOutlet var preSearchMainLabel: UILabel!
+    //@IBOutlet var PreSearchSubLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +22,5 @@ class NotificationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

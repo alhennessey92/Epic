@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="NotificationStandardTableViewCell" customModule="Epic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JS-XZ-6KW">
+                        <rect key="frame" x="63" y="4" width="220" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="n2k-hf-IwQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv9-gF-jhs">
+                        <rect key="frame" x="389" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Cbu-QW-LmP"/>
+                            <constraint firstAttribute="width" constant="40" id="pbZ-rT-Iac"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="v1" translatesAutoresizingMaskIntoConstraints="NO" id="gtl-Vl-neG">
+                        <rect key="frame" x="15" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7V8-h4-s5e"/>
+                            <constraint firstAttribute="height" constant="40" id="EZ3-VP-Hc8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3JS-XZ-6KW" secondAttribute="bottom" constant="5" id="7R0-ix-6vG"/>
+                    <constraint firstItem="Qv9-gF-jhs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="81Z-Nx-rdS"/>
+                    <constraint firstAttribute="trailing" secondItem="Qv9-gF-jhs" secondAttribute="trailing" constant="15" id="V9f-gz-shS"/>
+                    <constraint firstItem="Qv9-gF-jhs" firstAttribute="leading" secondItem="3JS-XZ-6KW" secondAttribute="trailing" constant="5" id="YMl-Kb-oXG"/>
+                    <constraint firstItem="3JS-XZ-6KW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ZlX-Br-lLT"/>
+                    <constraint firstItem="gtl-Vl-neG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fva-GL-8k0"/>
+                    <constraint firstItem="gtl-Vl-neG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="h0b-Gp-E9z"/>
+                    <constraint firstItem="3JS-XZ-6KW" firstAttribute="leading" secondItem="gtl-Vl-neG" secondAttribute="trailing" constant="15" id="yXq-xk-HSC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notificationMainLabel" destination="3JS-XZ-6KW" id="Gre-vm-guo"/>
+                <outlet property="notificationThumbImageView" destination="gtl-Vl-neG" id="cSY-xd-nuW"/>
+                <outlet property="notificationTimeLabel" destination="Qv9-gF-jhs" id="cZ9-GP-jze"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="64"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="v1" width="540" height="960"/>
+    </resources>
+</document>

@@ -1,16 +1,16 @@
 //
-//  MainDiscussionTableViewCell.swift
+//  MainTitleTableViewCell.swift
 //  Epic
 //
-//  Created by Al Hennessey on 18/03/2018.
+//  Created by Al Hennessey on 21/08/2018.
 //  Copyright © 2018 Epic. All rights reserved.
 //
 
 import UIKit
 
-class MainDiscussionTableViewCell: UITableViewCell {
+class MainTitleTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
