@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import DynamicBlurView
+//import DynamicBlurView
 
 class MainViewController: UIViewController {
     
     
     
-    @IBOutlet weak var testUserView: UIView!
-    @IBOutlet weak var wallpaperViewBG: UIImageView!
-    @IBOutlet weak var gradientViewBG: UIView!
+//    @IBOutlet weak var testUserView: UIView!
+//    @IBOutlet weak var wallpaperViewBG: UIImageView!
+//    @IBOutlet weak var gradientViewBG: UIView!
     
     
     
@@ -24,15 +24,15 @@ class MainViewController: UIViewController {
         
         
     
-        let startColor = UIColor(red: 2.0/255.0, green: 50.0/255.0, blue: 74.0/255.0, alpha: 1.0).cgColor
-        let endColor = UIColor(red: 3.0/255.0, green: 155.0/255.0, blue: 229.0/255.0, alpha: 0.1).cgColor
-        
-        
-        let gradientLayer:CAGradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [startColor,endColor] //Use diffrent colors
-        
-        gradientViewBG.layer.insertSublayer(gradientLayer, at: 0)
+//        let startColor = UIColor(red: 2.0/255.0, green: 50.0/255.0, blue: 74.0/255.0, alpha: 1.0).cgColor
+//        let endColor = UIColor(red: 3.0/255.0, green: 155.0/255.0, blue: 229.0/255.0, alpha: 0.1).cgColor
+//
+//
+//        let gradientLayer:CAGradientLayer = CAGradientLayer()
+//        gradientLayer.frame = view.bounds
+//        gradientLayer.colors = [startColor,endColor] //Use diffrent colors
+//
+//        gradientViewBG.layer.insertSublayer(gradientLayer, at: 0)
         
         
         
@@ -57,18 +57,18 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = .lightContent
-    }
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        UIApplication.shared.statusBarStyle = .lightContent
+//    }
+//    override var preferredStatusBarStyle : UIStatusBarStyle {
+//        return .lightContent
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+//    }
 
     
    

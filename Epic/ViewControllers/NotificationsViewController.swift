@@ -14,7 +14,7 @@ class NotificationsViewController: UIViewController, UITableViewDataSource, UITa
     
     private var data = [Notification]()
     //private var data = [AnyObject]()
-    @IBOutlet var notificationTableView: UITableView!
+    var notificationTableView = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +26,7 @@ class NotificationsViewController: UIViewController, UITableViewDataSource, UITa
         
         
         
-        notificationTableView.rowHeight = UITableViewAutomaticDimension
+        notificationTableView.rowHeight = UITableView.automaticDimension
         notificationTableView.estimatedRowHeight = 150.0
         
         
@@ -116,16 +116,16 @@ class NotificationsViewController: UIViewController, UITableViewDataSource, UITa
 //        return 50.0
 //    }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row).", preferredStyle: .alert)
-        
-        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        
-        alertController.addAction(alertAction)
-        
-        present(alertController, animated: true, completion: nil)
-        
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row).", preferredStyle: .alert)
+//
+//        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+//
+//        alertController.addAction(alertAction)
+//
+//        present(alertController, animated: true, completion: nil)
+//
+//    }
 
 }

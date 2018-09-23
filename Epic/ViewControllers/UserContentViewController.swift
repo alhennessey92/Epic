@@ -12,7 +12,7 @@ class UserContentViewController: UIViewController, UITableViewDataSource, UITabl
     
     
 
-    @IBOutlet var userContentTableView: UITableView!
+    var userContentTableView = UITableView()
     
     private var data = [AnyObject]()
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class UserContentViewController: UIViewController, UITableViewDataSource, UITabl
         userContentTableView.delegate = self
         userContentTableView.dataSource = self
         
-        userContentTableView.rowHeight = UITableViewAutomaticDimension
+        userContentTableView.rowHeight = UITableView.automaticDimension
         userContentTableView.estimatedRowHeight = 150.0
         
         userContentTableView.register(UINib(nibName: "MainTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTitleCell")
