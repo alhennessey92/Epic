@@ -19,20 +19,20 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         self.dataSource = self
         self.delegate = self
-        let initialPage = 0
+        let initialPage = 1
         
         
         //Handle nav views for pageview
-        let mainView = ViewController1(nibName: nil, bundle: nil)
-        let nav1 = UINavigationController(rootViewController: mainView)
-        let userContentView = ViewController2(nibName: nil, bundle: nil)
+        let notificationView = NotificationViewController(nibName: nil, bundle: nil)
+        let nav1 = UINavigationController(rootViewController: notificationView)
+        let userContentView = UserContentViewController(nibName: nil, bundle: nil)
         let nav2 = UINavigationController(rootViewController: userContentView)
-        let notificationView = ViewController3(nibName: nil, bundle: nil)
-        let nav3 = UINavigationController(rootViewController: notificationView)
+        let mainView = MainViewController(nibName: nil, bundle: nil)
+        let nav3 = UINavigationController(rootViewController: mainView)
         
-        let page1 = nav1
-        let page2 = nav2
-        let page3 = nav3
+        let page1 = nav2
+        let page2 = nav3
+        let page3 = nav1
         
         // add the individual viewControllers to the pageViewController
         self.pages.append(page1)
@@ -61,7 +61,8 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         if let viewControllerIndex = self.pages.index(of: viewController) {
             if viewControllerIndex == 0 {
                 // wrap to last page in array
-                return self.pages.last
+                //return self.pages.last
+                return nil
             } else {
                 // go to previous page in array
                 return self.pages[viewControllerIndex - 1]
@@ -78,7 +79,8 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
                 return self.pages[viewControllerIndex + 1]
             } else {
                 // wrap to first page in array
-                return self.pages.first
+                //return self.pages.first
+                return nil
             }
         }
         return nil

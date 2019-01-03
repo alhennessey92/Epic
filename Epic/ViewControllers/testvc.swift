@@ -9,7 +9,7 @@
 import UIKit
 //import DynamicBlurView
 
-class MainViewController: UIViewController {
+class testvc: UIViewController {
     
     
     

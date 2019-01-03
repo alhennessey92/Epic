@@ -10,7 +10,7 @@
 		485178643FA865DA9C658FF5 /* Pods_Epic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */; };
 		611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A172058563A00DCABAD /* AppDelegate.swift */; };
 		611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */; };
-		611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A2C2058569100DCABAD /* MainViewController.swift */; };
+		611C3A2D2058569100DCABAD /* testvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A2C2058569100DCABAD /* testvc.swift */; };
 		611C3A392060552500DCABAD /* Discussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A382060552500DCABAD /* Discussion.swift */; };
 		611C3A3B206058E200DCABAD /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3A206058E200DCABAD /* Topic.swift */; };
 		611C3A3D20605AAE00DCABAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3C20605AAE00DCABAD /* User.swift */; };
@@ -20,8 +20,6 @@
 		61574B5A2142E920002D96A5 /* NotificationStandardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61574B582142E920002D96A5 /* NotificationStandardTableViewCell.xib */; };
 		61574B5F2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61574B5D2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift */; };
 		61574B602146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61574B5E2146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib */; };
-		6194247A211E360100D32416 /* UserContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942479211E360100D32416 /* UserContentViewController.swift */; };
-		6194247E211E361E00D32416 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194247D211E361E00D32416 /* NotificationsViewController.swift */; };
 		61942487212C7AF100D32416 /* MainTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942485212C7AF100D32416 /* MainTitleTableViewCell.swift */; };
 		61942488212C7AF100D32416 /* MainTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61942486212C7AF100D32416 /* MainTitleTableViewCell.xib */; };
 		61942491212CA63200D32416 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942490212CA63200D32416 /* Notification.swift */; };
@@ -29,9 +27,9 @@
 		61D15FFE21518FDB001E3FDE /* PreSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D15FFC21518FDB001E3FDE /* PreSearchTableViewCell.swift */; };
 		61D15FFF21518FDB001E3FDE /* PreSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D15FFD21518FDB001E3FDE /* PreSearchTableViewCell.xib */; };
 		61D1600121558EDD001E3FDE /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1600021558EDD001E3FDE /* MainPageViewController.swift */; };
-		61D16003215590CD001E3FDE /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16002215590CD001E3FDE /* ViewController1.swift */; };
-		61D16005215590E2001E3FDE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16004215590E2001E3FDE /* ViewController2.swift */; };
-		61D1600721559100001E3FDE /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1600621559100001E3FDE /* ViewController3.swift */; };
+		61D16003215590CD001E3FDE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16002215590CD001E3FDE /* NotificationViewController.swift */; };
+		61D16005215590E2001E3FDE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16004215590E2001E3FDE /* MainViewController.swift */; };
+		61D1600721559100001E3FDE /* UserContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1600621559100001E3FDE /* UserContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +38,7 @@
 		611C3A172058563A00DCABAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611C3A1F2058563A00DCABAD /* Epic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Epic.xcdatamodel; sourceTree = "<group>"; };
 		611C3A262058563A00DCABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		611C3A2C2058569100DCABAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		611C3A2C2058569100DCABAD /* testvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testvc.swift; sourceTree = "<group>"; };
 		611C3A382060552500DCABAD /* Discussion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
 		611C3A3A206058E200DCABAD /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		611C3A3C20605AAE00DCABAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -50,8 +48,6 @@
 		61574B582142E920002D96A5 /* NotificationStandardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationStandardTableViewCell.xib; sourceTree = "<group>"; };
 		61574B5D2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLightTopicTableViewCell.swift; sourceTree = "<group>"; };
 		61574B5E2146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardLightTopicTableViewCell.xib; sourceTree = "<group>"; };
-		61942479211E360100D32416 /* UserContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentViewController.swift; sourceTree = "<group>"; };
-		6194247D211E361E00D32416 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		61942485212C7AF100D32416 /* MainTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleTableViewCell.swift; sourceTree = "<group>"; };
 		61942486212C7AF100D32416 /* MainTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTitleTableViewCell.xib; sourceTree = "<group>"; };
 		61942490212CA63200D32416 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -59,9 +55,9 @@
 		61D15FFC21518FDB001E3FDE /* PreSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSearchTableViewCell.swift; sourceTree = "<group>"; };
 		61D15FFD21518FDB001E3FDE /* PreSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreSearchTableViewCell.xib; sourceTree = "<group>"; };
 		61D1600021558EDD001E3FDE /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		61D16002215590CD001E3FDE /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		61D16004215590E2001E3FDE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		61D1600621559100001E3FDE /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		61D16002215590CD001E3FDE /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		61D16004215590E2001E3FDE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		61D1600621559100001E3FDE /* UserContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentViewController.swift; sourceTree = "<group>"; };
 		631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.release.xcconfig"; sourceTree = "<group>"; };
 		DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,9 +104,9 @@
 				611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */,
 				611C3A3E2070FEF300DCABAD /* Images.xcassets */,
 				61D1600021558EDD001E3FDE /* MainPageViewController.swift */,
-				61D16002215590CD001E3FDE /* ViewController1.swift */,
-				61D16004215590E2001E3FDE /* ViewController2.swift */,
-				61D1600621559100001E3FDE /* ViewController3.swift */,
+				61D16002215590CD001E3FDE /* NotificationViewController.swift */,
+				61D16004215590E2001E3FDE /* MainViewController.swift */,
+				61D1600621559100001E3FDE /* UserContentViewController.swift */,
 			);
 			path = Epic;
 			sourceTree = "<group>";
@@ -118,9 +114,7 @@
 		611C3A2E2058587900DCABAD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				611C3A2C2058569100DCABAD /* MainViewController.swift */,
-				61942479211E360100D32416 /* UserContentViewController.swift */,
-				6194247D211E361E00D32416 /* NotificationsViewController.swift */,
+				611C3A2C2058569100DCABAD /* testvc.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -297,11 +291,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Epic/Pods-Epic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyZeroMQ/SwiftyZeroMQ.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyZeroMQ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,22 +339,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D1600721559100001E3FDE /* ViewController3.swift in Sources */,
-				611C3A2D2058569100DCABAD /* MainViewController.swift in Sources */,
+				61D1600721559100001E3FDE /* UserContentViewController.swift in Sources */,
+				611C3A2D2058569100DCABAD /* testvc.swift in Sources */,
 				611C3A3B206058E200DCABAD /* Topic.swift in Sources */,
 				611C3A392060552500DCABAD /* Discussion.swift in Sources */,
-				6194247A211E360100D32416 /* UserContentViewController.swift in Sources */,
-				6194247E211E361E00D32416 /* NotificationsViewController.swift in Sources */,
 				61942493212CA76E00D32416 /* TableDisplayTypes.swift in Sources */,
 				61D1600121558EDD001E3FDE /* MainPageViewController.swift in Sources */,
 				611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */,
 				611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */,
 				61574B5621405D87002D96A5 /* GenericHelper.swift in Sources */,
 				61942491212CA63200D32416 /* Notification.swift in Sources */,
-				61D16005215590E2001E3FDE /* ViewController2.swift in Sources */,
+				61D16005215590E2001E3FDE /* MainViewController.swift in Sources */,
 				61574B592142E920002D96A5 /* NotificationStandardTableViewCell.swift in Sources */,
 				61574B5F2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift in Sources */,
-				61D16003215590CD001E3FDE /* ViewController1.swift in Sources */,
+				61D16003215590CD001E3FDE /* NotificationViewController.swift in Sources */,
 				61D15FFE21518FDB001E3FDE /* PreSearchTableViewCell.swift in Sources */,
 				611C3A3D20605AAE00DCABAD /* User.swift in Sources */,
 				61942487212C7AF100D32416 /* MainTitleTableViewCell.swift in Sources */,
