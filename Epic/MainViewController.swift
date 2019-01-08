@@ -7,36 +7,50 @@
 //
 
 import UIKit
-import SwiftyZeroMQ
+import Pulley
 
-class MainViewController: UIViewController {
+
+class MainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.white
+        collectionView?.backgroundColor = .white
+        collectionView?.register(DiscussionCell.self, forCellWithReuseIdentifier: "cellId")
         
-        //Test Zeromq
-        // Print ZeroMQ library and our framework version
-        let (major, minor, patch, versionString) = SwiftyZeroMQ.version
-        print("ZeroMQ library version is \(major).\(minor) with patch level .\(patch)")
-        print("ZeroMQ library version is \(versionString)")
-        print("SwiftyZeroMQ version is \(SwiftyZeroMQ.frameworkVersion)")
-        
-        // label
-        let labelInst = UILabel()
-        self.view.addSubview(labelInst)
-        labelInst.text = "Page 2"
-        labelInst.translatesAutoresizingMaskIntoConstraints = false
-        labelInst.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 50).isActive = true
-        labelInst.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 20).isActive = true
+        collectionView?.isPagingEnabled = true
+        collectionView?.showsHorizontalScrollIndicator = false
+        //collectionView?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        //collectionView?.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        //self.pulleyViewController?.displayMode = .automatic
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 400
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        
+        // definitely don't try this, it is a very bad idea
+        //        let imageView = UIImageView()
+        //        cell.addSubview(imageView)
+        
+              cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .green
+        
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: view.frame.height - 60)
+    }
+    
 }

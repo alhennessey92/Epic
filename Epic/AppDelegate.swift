@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Pulley
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,13 +21,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = .lightContent
         
-        let pageController = MainPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        //UIApplication.shared.statusBarStyle = .lightContent
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        if let window = self.window {
-            window.rootViewController = pageController
-            window.makeKeyAndVisible()
-        }
+        // this is how we build out our app in code
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        //        let randomViewController = UIViewController()
+        //        randomViewController.view.backgroundColor = .purple
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let swipingController = MainViewController(collectionViewLayout: layout)
+        
+        
+// To create in code (uncomment this block)
+
+         let mainContentVC = swipingController
+         let drawerContentVC = DrawerViewController()
+         let pulleyDrawerVC = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
+        
+          //Uncomment this next line to give the drawer a starting position, in this case: closed.
+          pulleyDrawerVC.initialDrawerPosition = .closed
+        
+         window?.rootViewController = pulleyDrawerVC
+ 
+ 
+        
+        
+        
         return true
         
        

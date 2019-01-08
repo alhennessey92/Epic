@@ -8,56 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		485178643FA865DA9C658FF5 /* Pods_Epic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */; };
+		6100D2DE21DEB87E00D29A7B /* DiscussionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100D2DD21DEB87E00D29A7B /* DiscussionCell.swift */; };
+		6100D2E021E24F6300D29A7B /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100D2DF21E24F6300D29A7B /* DrawerViewController.swift */; };
+		6100D2E321E2577300D29A7B /* CustomMaskExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100D2E221E2577300D29A7B /* CustomMaskExample.swift */; };
 		611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A172058563A00DCABAD /* AppDelegate.swift */; };
 		611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */; };
-		611C3A2D2058569100DCABAD /* testvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A2C2058569100DCABAD /* testvc.swift */; };
 		611C3A392060552500DCABAD /* Discussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A382060552500DCABAD /* Discussion.swift */; };
 		611C3A3B206058E200DCABAD /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3A206058E200DCABAD /* Topic.swift */; };
 		611C3A3D20605AAE00DCABAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C3A3C20605AAE00DCABAD /* User.swift */; };
 		611C3A3F2070FEF300DCABAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611C3A3E2070FEF300DCABAD /* Images.xcassets */; };
 		61574B5621405D87002D96A5 /* GenericHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61574B5521405D87002D96A5 /* GenericHelper.swift */; };
-		61574B592142E920002D96A5 /* NotificationStandardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61574B572142E920002D96A5 /* NotificationStandardTableViewCell.swift */; };
-		61574B5A2142E920002D96A5 /* NotificationStandardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61574B582142E920002D96A5 /* NotificationStandardTableViewCell.xib */; };
-		61574B5F2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61574B5D2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift */; };
-		61574B602146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61574B5E2146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib */; };
-		61942487212C7AF100D32416 /* MainTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942485212C7AF100D32416 /* MainTitleTableViewCell.swift */; };
-		61942488212C7AF100D32416 /* MainTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61942486212C7AF100D32416 /* MainTitleTableViewCell.xib */; };
 		61942491212CA63200D32416 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942490212CA63200D32416 /* Notification.swift */; };
 		61942493212CA76E00D32416 /* TableDisplayTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61942492212CA76E00D32416 /* TableDisplayTypes.swift */; };
-		61D15FFE21518FDB001E3FDE /* PreSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D15FFC21518FDB001E3FDE /* PreSearchTableViewCell.swift */; };
-		61D15FFF21518FDB001E3FDE /* PreSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D15FFD21518FDB001E3FDE /* PreSearchTableViewCell.xib */; };
-		61D1600121558EDD001E3FDE /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1600021558EDD001E3FDE /* MainPageViewController.swift */; };
-		61D16003215590CD001E3FDE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16002215590CD001E3FDE /* NotificationViewController.swift */; };
 		61D16005215590E2001E3FDE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D16004215590E2001E3FDE /* MainViewController.swift */; };
-		61D1600721559100001E3FDE /* UserContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1600621559100001E3FDE /* UserContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2628713BB899E02FC8817530 /* Pods-Epic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.debug.xcconfig"; sourceTree = "<group>"; };
+		6100D2DD21DEB87E00D29A7B /* DiscussionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionCell.swift; sourceTree = "<group>"; };
+		6100D2DF21E24F6300D29A7B /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		6100D2E221E2577300D29A7B /* CustomMaskExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaskExample.swift; sourceTree = "<group>"; };
+		6100D2E421E2926800D29A7B /* Pulley.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pulley.h; sourceTree = "<group>"; };
 		611C3A142058563A00DCABAD /* Epic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611C3A172058563A00DCABAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611C3A1F2058563A00DCABAD /* Epic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Epic.xcdatamodel; sourceTree = "<group>"; };
 		611C3A262058563A00DCABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		611C3A2C2058569100DCABAD /* testvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testvc.swift; sourceTree = "<group>"; };
 		611C3A382060552500DCABAD /* Discussion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
 		611C3A3A206058E200DCABAD /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		611C3A3C20605AAE00DCABAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		611C3A3E2070FEF300DCABAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		61574B5521405D87002D96A5 /* GenericHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHelper.swift; sourceTree = "<group>"; };
-		61574B572142E920002D96A5 /* NotificationStandardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStandardTableViewCell.swift; sourceTree = "<group>"; };
-		61574B582142E920002D96A5 /* NotificationStandardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationStandardTableViewCell.xib; sourceTree = "<group>"; };
-		61574B5D2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLightTopicTableViewCell.swift; sourceTree = "<group>"; };
-		61574B5E2146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardLightTopicTableViewCell.xib; sourceTree = "<group>"; };
-		61942485212C7AF100D32416 /* MainTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleTableViewCell.swift; sourceTree = "<group>"; };
-		61942486212C7AF100D32416 /* MainTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTitleTableViewCell.xib; sourceTree = "<group>"; };
 		61942490212CA63200D32416 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		61942492212CA76E00D32416 /* TableDisplayTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDisplayTypes.swift; sourceTree = "<group>"; };
-		61D15FFC21518FDB001E3FDE /* PreSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSearchTableViewCell.swift; sourceTree = "<group>"; };
-		61D15FFD21518FDB001E3FDE /* PreSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreSearchTableViewCell.xib; sourceTree = "<group>"; };
-		61D1600021558EDD001E3FDE /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		61D16002215590CD001E3FDE /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		61D16004215590E2001E3FDE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		61D1600621559100001E3FDE /* UserContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentViewController.swift; sourceTree = "<group>"; };
 		631B92B1C832BBAE44053BC6 /* Pods-Epic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epic/Pods-Epic.release.xcconfig"; sourceTree = "<group>"; };
 		DBB18AEF7E2FBEFE14C54863 /* Pods_Epic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6100D2DC21DEB86400D29A7B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6100D2DD21DEB87E00D29A7B /* DiscussionCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6100D2E121E24FA500D29A7B /* DrawerSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrawerSupportFiles;
+			sourceTree = "<group>";
+		};
 		611C3A0B2058563A00DCABAD = {
 			isa = PBXGroup;
 			children = (
@@ -95,40 +93,20 @@
 		611C3A162058563A00DCABAD /* Epic */ = {
 			isa = PBXGroup;
 			children = (
+				6100D2E121E24FA500D29A7B /* DrawerSupportFiles */,
+				6100D2DC21DEB86400D29A7B /* ViewControllers */,
 				611C3A312058589D00DCABAD /* SupportFiles */,
 				611C3A302058589200DCABAD /* Models */,
-				611C3A2F2058588300DCABAD /* TableViewCells */,
-				611C3A2E2058587900DCABAD /* ViewControllers */,
 				611C3A172058563A00DCABAD /* AppDelegate.swift */,
 				611C3A262058563A00DCABAD /* Info.plist */,
 				611C3A1E2058563A00DCABAD /* Epic.xcdatamodeld */,
 				611C3A3E2070FEF300DCABAD /* Images.xcassets */,
-				61D1600021558EDD001E3FDE /* MainPageViewController.swift */,
-				61D16002215590CD001E3FDE /* NotificationViewController.swift */,
 				61D16004215590E2001E3FDE /* MainViewController.swift */,
-				61D1600621559100001E3FDE /* UserContentViewController.swift */,
+				6100D2DF21E24F6300D29A7B /* DrawerViewController.swift */,
+				6100D2E221E2577300D29A7B /* CustomMaskExample.swift */,
+				6100D2E421E2926800D29A7B /* Pulley.h */,
 			);
 			path = Epic;
-			sourceTree = "<group>";
-		};
-		611C3A2E2058587900DCABAD /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				611C3A2C2058569100DCABAD /* testvc.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		611C3A2F2058588300DCABAD /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				61D15FFB21518FB0001E3FDE /* Search */,
-				61574B5C2146D3C6002D96A5 /* Topic */,
-				61574B5B2146D386002D96A5 /* Discussion */,
-				6194248A212C7CF700D32416 /* Notification */,
-				61942489212C7CEF00D32416 /* Generic */,
-			);
-			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		611C3A302058589200DCABAD /* Models */ = {
@@ -149,49 +127,6 @@
 				61574B5521405D87002D96A5 /* GenericHelper.swift */,
 			);
 			path = SupportFiles;
-			sourceTree = "<group>";
-		};
-		61574B5B2146D386002D96A5 /* Discussion */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discussion;
-			sourceTree = "<group>";
-		};
-		61574B5C2146D3C6002D96A5 /* Topic */ = {
-			isa = PBXGroup;
-			children = (
-				61574B5D2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift */,
-				61574B5E2146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib */,
-			);
-			path = Topic;
-			sourceTree = "<group>";
-		};
-		61942489212C7CEF00D32416 /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-				61942485212C7AF100D32416 /* MainTitleTableViewCell.swift */,
-				61942486212C7AF100D32416 /* MainTitleTableViewCell.xib */,
-			);
-			path = Generic;
-			sourceTree = "<group>";
-		};
-		6194248A212C7CF700D32416 /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				61574B572142E920002D96A5 /* NotificationStandardTableViewCell.swift */,
-				61574B582142E920002D96A5 /* NotificationStandardTableViewCell.xib */,
-			);
-			path = Notification;
-			sourceTree = "<group>";
-		};
-		61D15FFB21518FB0001E3FDE /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				61D15FFC21518FDB001E3FDE /* PreSearchTableViewCell.swift */,
-				61D15FFD21518FDB001E3FDE /* PreSearchTableViewCell.xib */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		7702A694F4ECBE126A8B5C55 /* Frameworks */ = {
@@ -273,11 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61574B5A2142E920002D96A5 /* NotificationStandardTableViewCell.xib in Resources */,
-				61D15FFF21518FDB001E3FDE /* PreSearchTableViewCell.xib in Resources */,
 				611C3A3F2070FEF300DCABAD /* Images.xcassets in Resources */,
-				61942488212C7AF100D32416 /* MainTitleTableViewCell.xib in Resources */,
-				61574B602146D3DD002D96A5 /* StandardLightTopicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,20 +223,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Epic/Pods-Epic-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
-				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyZeroMQ/SwiftyZeroMQ.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyZeroMQ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -339,23 +268,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D1600721559100001E3FDE /* UserContentViewController.swift in Sources */,
-				611C3A2D2058569100DCABAD /* testvc.swift in Sources */,
 				611C3A3B206058E200DCABAD /* Topic.swift in Sources */,
 				611C3A392060552500DCABAD /* Discussion.swift in Sources */,
 				61942493212CA76E00D32416 /* TableDisplayTypes.swift in Sources */,
-				61D1600121558EDD001E3FDE /* MainPageViewController.swift in Sources */,
+				6100D2DE21DEB87E00D29A7B /* DiscussionCell.swift in Sources */,
 				611C3A202058563A00DCABAD /* Epic.xcdatamodeld in Sources */,
+				6100D2E021E24F6300D29A7B /* DrawerViewController.swift in Sources */,
 				611C3A182058563A00DCABAD /* AppDelegate.swift in Sources */,
 				61574B5621405D87002D96A5 /* GenericHelper.swift in Sources */,
 				61942491212CA63200D32416 /* Notification.swift in Sources */,
+				6100D2E321E2577300D29A7B /* CustomMaskExample.swift in Sources */,
 				61D16005215590E2001E3FDE /* MainViewController.swift in Sources */,
-				61574B592142E920002D96A5 /* NotificationStandardTableViewCell.swift in Sources */,
-				61574B5F2146D3DD002D96A5 /* StandardLightTopicTableViewCell.swift in Sources */,
-				61D16003215590CD001E3FDE /* NotificationViewController.swift in Sources */,
-				61D15FFE21518FDB001E3FDE /* PreSearchTableViewCell.swift in Sources */,
 				611C3A3D20605AAE00DCABAD /* User.swift in Sources */,
-				61942487212C7AF100D32416 /* MainTitleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
