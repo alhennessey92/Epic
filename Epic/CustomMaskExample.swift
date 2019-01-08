@@ -12,6 +12,7 @@ import UIKit
 struct CustomMaskExample {
     
     // MARK: - Constants
+    
     private struct Constants {
         static let cornerRadius: CGFloat = 8.0
         static let cutoutDistanceFromEdge: CGFloat = 32.0
@@ -19,6 +20,7 @@ struct CustomMaskExample {
     }
     
     // MARK: - Functions
+    
     func customMask(for bounds: CGRect) -> UIBezierPath {
         let maxX = bounds.maxX
         let maxY = bounds.maxY

@@ -1,56 +1,93 @@
 //
-//  ViewController2.swift
+//  MainViewController.swift
 //  Epic
 //
-//  Created by Al Hennessey on 21/09/2018.
-//  Copyright © 2018 Epic. All rights reserved.
+//  Created by Al Hennessey on 08/01/2019.
+//  Copyright © 2019 Epic. All rights reserved.
 //
 
 import UIKit
 import Pulley
+import MapKit
 
-
-class MainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class MainViewController: UIViewController {
+    @IBOutlet var mainView: UIView!
+    
+    
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var controlsContainer: UIView!
+    @IBOutlet var temperatureLabel: UILabel!
+    
+    /**
+     * IMPORTANT! If you have constraints that you use to 'follow' the drawer (like the temperature label in the demo)...
+     * Make sure you constraint them to the bottom of the superview and NOT the superview's bottom margin. Double click the constraint, and you can change it in the dropdown in the right-side panel. If you don't, you'll have varying spacings to the drawer depending on the device.
+     */
+    @IBOutlet var temperatureLabelBottomConstraint: NSLayoutConstraint!
+    
+    fileprivate let temperatureLabelBottomDistance: CGFloat = 8.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
-        collectionView?.backgroundColor = .white
-        collectionView?.register(DiscussionCell.self, forCellWithReuseIdentifier: "cellId")
-        
-        collectionView?.isPagingEnabled = true
-        collectionView?.showsHorizontalScrollIndicator = false
-        //collectionView?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        //collectionView?.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
+        controlsContainer.layer.cornerRadius = 10.0
+        temperatureLabel.layer.cornerRadius = 7.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //self.pulleyViewController?.displayMode = .automatic
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 400
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        super.viewWillAppear(animated)
         
-        // definitely don't try this, it is a very bad idea
-        //        let imageView = UIImageView()
-        //        cell.addSubview(imageView)
+        // Customize Pulley in viewWillAppear, as the view controller's viewDidLoad will run *before* Pulley's and some changes may be overwritten.
+        // Uncomment if you want to change the visual effect style to dark. Note: The rest of the sample app's UI isn't made for dark theme. This just shows you how to do it.
+        // drawer.drawerBackgroundVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         
-              cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .green
-        
-        
-        return cell
+        // We want the 'side panel' layout in landscape iPhone / iPad, so we set this to 'automatic'. The default is 'bottomDrawer' for compatibility with older Pulley versions.
+        self.pulleyViewController?.displayMode = .automatic
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height - 60)
+    @IBAction func runPrimaryContentTransitionWithoutAnimation(_ sender: Any) {
+        let primaryContent = DrawerTransitionTestViewController()
+        
+        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
     }
     
+    
+    @IBAction func runPrimaryContentTransition(_ sender: Any) {
+        let primaryContent = DrawerTransitionTestViewController()
+        
+        
+        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: true)
+    }
+   
+}
+
+extension MainViewController: PulleyPrimaryContentControllerDelegate {
+    
+    func makeUIAdjustmentsForFullscreen(progress: CGFloat, bottomSafeArea: CGFloat)
+    {
+        guard let drawer = self.pulleyViewController, drawer.currentDisplayMode == .drawer else {
+            controlsContainer.alpha = 1.0
+            return
+        }
+        
+        controlsContainer.alpha = 1.0 - progress
+    }
+    
+    func drawerChangedDistanceFromBottom(drawer: PulleyViewController, distance: CGFloat, bottomSafeArea: CGFloat)
+    {
+        guard drawer.currentDisplayMode == .drawer else {
+            
+            temperatureLabelBottomConstraint.constant = temperatureLabelBottomDistance
+            return
+        }
+        
+        if distance <= 268.0 + bottomSafeArea
+        {
+            temperatureLabelBottomConstraint.constant = distance + temperatureLabelBottomDistance
+        }
+        else
+        {
+            temperatureLabelBottomConstraint.constant = 268.0 + temperatureLabelBottomDistance
+        }
+    }
 }

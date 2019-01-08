@@ -2,36 +2,35 @@
 //  DrawerViewController.swift
 //  Epic
 //
-//  Created by Al Hennessey on 06/01/2019.
+//  Created by Al Hennessey on 08/01/2019.
 //  Copyright © 2019 Epic. All rights reserved.
 //
-
 
 import UIKit
 import Pulley
 
 class DrawerViewController: UIViewController {
-    
+
     // Pulley can apply a custom mask to the panel drawer. This variable toggles an example.
     private var shouldDisplayCustomMaskExample = false
     
-    //@IBOutlet var tableView: UITableView!
-    //@IBOutlet var searchBar: UISearchBar!
-    //@IBOutlet var gripperView: UIView!
-    //@IBOutlet var topSeparatorView: UIView!
-    //@IBOutlet var bottomSeperatorView: UIView!
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var gripperView: UIView!
+    @IBOutlet var topSeparatorView: UIView!
+    @IBOutlet var bottomSeperatorView: UIView!
     
-    //@IBOutlet var gripperTopConstraint: NSLayoutConstraint!
+    @IBOutlet var gripperTopConstraint: NSLayoutConstraint!
     
     // We adjust our 'header' based on the bottom safe area using this constraint
-    //@IBOutlet var headerSectionHeightConstraint: NSLayoutConstraint!
+    @IBOutlet var headerSectionHeightConstraint: NSLayoutConstraint!
     
     fileprivate var drawerBottomSafeArea: CGFloat = 0.0 {
         didSet {
             self.loadViewIfNeeded()
             
             // We'll configure our UI to respect the safe area. In our small demo app, we just want to adjust the contentInset for the tableview.
-            //tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: drawerBottomSafeArea, right: 0.0)
+            tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: drawerBottomSafeArea, right: 0.0)
         }
     }
     
@@ -39,13 +38,9 @@ class DrawerViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        //gripperView.layer.cornerRadius = 2.5
+        gripperView.layer.cornerRadius = 2.5
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        label.center = CGPoint(x: 160, y: 285)
-        label.textAlignment = .center
-        label.text = "I'm a test label"
-        self.view.addSubview(label)
+        tableView.register(UINib(nibName: "SampleCellTableViewCell", bundle: nil), forCellReuseIdentifier: "SampleCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -115,75 +110,75 @@ extension DrawerViewController: PulleyDrawerViewControllerDelegate {
          2. We only need this when it's in the 'collapsed' position, so we'll add some safe area when it's collapsed and remove it when it's not.
          3. These changes are captured in an animation block (when necessary) by Pulley, so these changes will be animated along-side the drawer automatically.
          */
-//        if drawer.drawerPosition == .collapsed
-//        {
-//            headerSectionHeightConstraint.constant = 68.0 + drawerBottomSafeArea
-//        }
-//        else
-//        {
-//            headerSectionHeightConstraint.constant = 68.0
-//        }
-//
+        if drawer.drawerPosition == .collapsed
+        {
+            headerSectionHeightConstraint.constant = 68.0 + drawerBottomSafeArea
+        }
+        else
+        {
+            headerSectionHeightConstraint.constant = 68.0
+        }
+        
         // Handle tableview scrolling / searchbar editing
         
-//        tableView.isScrollEnabled = drawer.drawerPosition == .open || drawer.currentDisplayMode == .panel
-//
-//        if drawer.drawerPosition != .open
-//        {
-//            searchBar.resignFirstResponder()
-//        }
-//
-//        if drawer.currentDisplayMode == .panel
-//        {
-//            topSeparatorView.isHidden = drawer.drawerPosition == .collapsed
-//            bottomSeperatorView.isHidden = drawer.drawerPosition == .collapsed
-//        }
-//        else
-//        {
-//            topSeparatorView.isHidden = false
-//            bottomSeperatorView.isHidden = true
-//        }
+        tableView.isScrollEnabled = drawer.drawerPosition == .open || drawer.currentDisplayMode == .panel
+        
+        if drawer.drawerPosition != .open
+        {
+            searchBar.resignFirstResponder()
+        }
+        
+        if drawer.currentDisplayMode == .panel
+        {
+            topSeparatorView.isHidden = drawer.drawerPosition == .collapsed
+            bottomSeperatorView.isHidden = drawer.drawerPosition == .collapsed
+        }
+        else
+        {
+            topSeparatorView.isHidden = false
+            bottomSeperatorView.isHidden = true
+        }
     }
     
     /// This function is called when the current drawer display mode changes. Make UI customizations here.
-//    func drawerDisplayModeDidChange(drawer: PulleyViewController) {
-//
-//        print("Drawer: \(drawer.currentDisplayMode)")
-//        gripperTopConstraint.isActive = drawer.currentDisplayMode == .drawer
-//    }
+    func drawerDisplayModeDidChange(drawer: PulleyViewController) {
+        
+        print("Drawer: \(drawer.currentDisplayMode)")
+        gripperTopConstraint.isActive = drawer.currentDisplayMode == .drawer
+    }
 }
 
-//extension DrawerViewController: UISearchBarDelegate {
-//
-//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-//        pulleyViewController?.setDrawerPosition(position: .open, animated: true)
-//    }
-//}
+extension DrawerViewController: UISearchBarDelegate {
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        pulleyViewController?.setDrawerPosition(position: .open, animated: true)
+    }
+}
 
-//extension DrawerViewController: UITableViewDataSource {
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 50
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return tableView.dequeueReusableCell(withIdentifier: "SampleCell", for: indexPath)
-//    }
-//}
-//
-//extension DrawerViewController: UITableViewDelegate {
-//
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 81.0
-//    }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//
-//        let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
-//
-//        pulleyViewController?.setDrawerPosition(position: .collapsed, animated: true)
-//
-//        pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
-//    }
-//}
+extension DrawerViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "SampleCell", for: indexPath)
+    }
+}
+
+extension DrawerViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 81.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let primaryContent = DrawerTransitionTestViewController()
+        
+        pulleyViewController?.setDrawerPosition(position: .collapsed, animated: true)
+        
+        pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
+    }
+}
