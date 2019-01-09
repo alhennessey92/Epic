@@ -151,6 +151,7 @@ extension DrawerViewController: PulleyDrawerViewControllerDelegate {
 extension DrawerViewController: UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        print("position1")
         pulleyViewController?.setDrawerPosition(position: .open, animated: true)
     }
 }
@@ -174,8 +175,20 @@ extension DrawerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        print("selected row: \(indexPath)")
+        let number = Int.random(in: 0 ..< 3)
+        var primaryContent = UIViewController()
+        switch number{
+        case 0:
+            primaryContent = MainViewController()
+        case 1:
+            primaryContent = MainTest1ViewController()
+        case 2:
+            primaryContent = MainTest2ViewController()
+        default:
+            primaryContent = MainViewController()
+        }
         
-        let primaryContent = DrawerTransitionTestViewController()
         
         pulleyViewController?.setDrawerPosition(position: .collapsed, animated: true)
         

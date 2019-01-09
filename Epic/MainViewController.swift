@@ -8,13 +8,13 @@
 
 import UIKit
 import Pulley
-import MapKit
+
 
 class MainViewController: UIViewController {
     @IBOutlet var mainView: UIView!
     
     
-    @IBOutlet var mapView: MKMapView!
+    
     @IBOutlet var controlsContainer: UIView!
     @IBOutlet var temperatureLabel: UILabel!
     

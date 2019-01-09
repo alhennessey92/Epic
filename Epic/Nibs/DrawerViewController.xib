@@ -36,6 +36,9 @@
                                 <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Where do you want to go?" translatesAutoresizingMaskIntoConstraints="NO" id="az7-Bh-nLa">
                                     <rect key="frame" x="0.0" y="6" width="375" height="56"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="2Ah-qN-dCV"/>
+                                    </connections>
                                 </searchBar>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHs-bT-K7X" userLabel="Top Seperator View">
                                     <rect key="frame" x="0.0" y="67.5" width="375" height="0.5"/>
@@ -57,6 +60,10 @@
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-f1-TvU">
                             <rect key="frame" x="0.0" y="68" width="375" height="579"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="2dg-fs-JW1"/>
+                                <outlet property="delegate" destination="-1" id="asF-OO-6aR"/>
+                            </connections>
                         </tableView>
                     </subviews>
                     <constraints>
